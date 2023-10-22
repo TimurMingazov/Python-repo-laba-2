@@ -8,5 +8,5 @@ full_spend = 0
 for i in range(1, months+1):
     full_spend = spend + full_spend
     spend = spend * 1.03
-money_capital = int(full_spend - salary*10)
-print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", money_capital)
+money_capital = full_spend - salary*10
+print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", round(money_capital, 2))
